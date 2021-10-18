@@ -1,0 +1,76 @@
+/* banner no 1  */
+.banners-promo-01 {
+    display: table-cell;
+    vertical-align: top;
+    padding: 56px 80px 68px;
+    background-color: #f6f8f9;
+}
+.banners-promo-01__title {
+    font-size: 42px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #42474c;
+    margin: 0 0 18px;
+}
+
+.banners-promo-01__text {
+    margin-bottom: 13px;
+}
+.banners-promo-01__text p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #42474c;
+}
+.banners-promo-03__list {
+    padding: 0;
+    margin: 0;
+}
+
+.banners-promo-01__list li {
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: 700;
+    list-style: none;
+    display: block;
+    color: #42474c;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+/* banner no 2  */
+
+.banners-promo-02 {
+    display: table-cell;
+    vertical-align: top;
+    padding: 56px 80px 68px;
+    background-color: #4eaac8;
+}
+.banners-promo-02__title {
+    font-size: 42px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 18px;
+}
+.banners-promo-02__text {
+    margin-bottom: 13px;
+}
+.banners-promo-02__text p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+.banners-promo-02__list {
+    padding: 0;
+    margin: 0;
+}
+.banners-promo-02__list li {
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: 700;
+    list-style: none;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
