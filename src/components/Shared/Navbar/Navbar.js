@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useFirebase from '../../../hook/useFirebase';
+import useAuth from '../../../hook/useAuth';
 
 const Navbar = () => {
-    const { user, logOut } = useFirebase();
+    const { user, logOut } = useAuth();
     return (
         <div className="mx-4">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">

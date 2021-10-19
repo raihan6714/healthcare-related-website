@@ -1,31 +1,36 @@
 import React, { useEffect, useState } from 'react';
-import Services from '../Home/Services/Services';
+import { useParams } from 'react-router';
 
 const ServiceDetalis = () => {
-    const [data, setData] = useState({});
+    const { id } = useParams();
+    const [data, setData] = useState([]);
 
     useEffect(() => {
         fetch('/services.json')
             .then(res => res.json())
             .then(data => setData(data));
     }, []);
+
+    const selectItem = data.filter(dt => dt.key === id);
+
     return (
 
         <>
-            <div className="card mb-3" style={{ maxWidth: "540px" }}>
-                <div className="row g-0">
-                    <div className="col-md-4">
-                        <img src="..." className="img-fluid rounded-start" alt="..." />
+            <div className="container py-4">
+                <div className="row">
+                    <div className="col-md-5">
+                        <img src={selectItem[0]?.img} className="img-fluid rounded-start" alt="..." />
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-7">
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                            <h2 className="">THERAPIES NAME : <span className="text-primary mb-4">{selectItem[0]?.name}</span></h2>
+                            <h6 className="mb-4">{selectItem[0]?.desc}</h6>
+                            <h3><b>PRICE :</b> <span className="text-primary">${selectItem[0]?.price}</span></h3>
                         </div>
                     </div>
                 </div>
             </div>
+
         </>
     );
 };

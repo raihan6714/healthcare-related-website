@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ServiceCart = (props) => {
-    const { key, name, img, desc, price } = props.service;
+const SingleService = (props) => {
+    const { key, name, img, desc, price } = props.allsrvc;
     return (
         <>
             <div className="col">
@@ -25,4 +25,4 @@ const ServiceCart = (props) => {
     );
 };
 
-export default ServiceCart;
+export default SingleService;

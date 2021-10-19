@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useFirebase from '../../../hook/useFirebase';
+import useAuth from '../../../hook/useAuth';
 import './Login.css';
 const Login = () => {
-    const { SignInWithGoogle } = useFirebase();
+    const { SignInWithGoogle, handleLogin, handleEmailChange, handlePasswordChange } = useAuth();
     return (
         <>
-            <form>
+            <form onSubmit={handleLogin}>
                 <div className="container mx-auto">
                     <div className="row">
                         <div className="col-md-6">
@@ -17,9 +17,9 @@ const Login = () => {
                         <div className="col-md-6 mt-5">
                             <h2 className="text-center"><i className="fas fa-sign-in-alt"></i> Login Please</h2>
                             <label htmlFor="uname"><b>Email</b></label>
-                            <input type="email" placeholder="Enter email" name="email" required />
+                            <input onBlur={handleEmailChange} type="email" placeholder="Enter email" name="email" required />
                             <label htmlFor="psw"><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" name="psw" required />
+                            <input onBlur={handlePasswordChange} type="password" placeholder="Enter Password" name="psw" required />
                             <div className="d-flex justify-content-between">
                                 <button type="submit" className="btn btn-primary"><i className="fas fa-sign-in-alt"></i> Login</button>
 
