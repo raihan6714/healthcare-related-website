@@ -1,0 +1,50 @@
+[
+    {
+        "key": "service-01",
+        "name": "Dr. Sandra Miller",
+        "desc": "Over the past year we have seen an increase in publicity surrounding mental health and a rise in the number of people campaigning to encourage others to come forward and share their stories. There have been many famous faces behind these campaigns, with lots of male celebrities helping to drive them forward",
+        "img": "https://livewp.site/html/optima/img/shop/shop_single/shop_single_item_01.jpg",
+        "price": "100.00",
+        "tags": "How to Analyze People"
+    },
+    {
+        "key": "service-02",
+        "name": "TREATING DEPRESSION",
+        "desc": "Maximising independence in the home, including tenancy agreements, finances and personal care",
+        "img": "https://livewp.site/html/optima/img/shop/shop_single/shop_single_item_02.jpg",
+        "price": "100",
+        "tags": "Neurology"
+    },
+    {
+        "key": "service-03",
+        "name": "COUPLE THERAPY",
+        "desc": "Our support, developed in line with the Scottish Government’s Mental Health Strategy, is focused on supporting people to live independently and well",
+        "img": "https://livewp.site/html/optima/img/shop/shop_single/shop_single_item_03.jpg",
+        "price": "800",
+        "tags": "Hypnosis"
+    },
+    {
+        "key": "service-04",
+        "name": "FAMILY PRACTICE",
+        "desc": "Challenges with mental health have touched every life in our country but each person’s experience is",
+        "img": "https://livewp.site/html/optima/img/shop/shop_item/shop_item__09.jpg",
+        "price": "1100",
+        "tags": "Dream Psychology"
+    },
+    {
+        "key": "service-05",
+        "name": "GROUP THERAPY",
+        "desc": "Maximising independence in the home, including tenancy agreements, finances and personal care",
+        "img": "https://livewp.site/html/optima/img/shop/shop_item/shop_item__07.jpg",
+        "price": "1800",
+        "tags": "Psychology of Success"
+    },
+    {
+        "key": "service-06",
+        "name": "ANTI STRESS THERAPY",
+        "desc": "Attending social activities, connecting with local resources and trying new things",
+        "img": "https://livewp.site/html/optima/img/shop/shop_item/shop_item__08.jpg",
+        "price": "700",
+        "tags": "Killer of Depression"
+    }
+]

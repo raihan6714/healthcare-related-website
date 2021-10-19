@@ -16,6 +16,8 @@ import PrivateRoute from './components/Shared/Login/PrivateRoute/PrivateRoute';
 import ServiceDetalis from './components/ServiceDetalis/ServiceDetalis';
 import AuthProvider from './Context/AuthProvider';
 import AllServices from './components/AllServices/AllServices';
+import Shop from './components/Shop/Shop';
+import Contacts from './components/Contacts/Contacts';
 function App() {
   return (
     <>
@@ -23,17 +25,17 @@ function App() {
         <Router>
           <Header></Header>
           <Switch>
+            {/* home  */}
             <Route exact path="/">
               <Home></Home>
             </Route>
             <Route path="/home">
               <Home></Home>
             </Route>
+
+            {/* about us  */}
             <Route path="/about">
               <AboutUs></AboutUs>
-            </Route>
-            <Route path="/services">
-              <AllServices></AllServices>
             </Route>
             {/* login  */}
             <Route path="/login">
@@ -43,14 +45,28 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
+            {/* contacts  */}
+            <Route path="/contacts">
+              <Contacts></Contacts>
+            </Route>
 
+            {/* services & our books private route */}
             <PrivateRoute path="/serviceDetails/:id">
               <ServiceDetalis></ServiceDetalis>
             </PrivateRoute>
+            {/* shop  */}
+            <PrivateRoute path="/books">
+              <Shop></Shop>
+            </PrivateRoute>
+            <PrivateRoute path="/services">
+              <AllServices></AllServices>
+            </PrivateRoute>
 
+            {/* not found */}
             <Route exact path="*">
               <NotFound></NotFound>
             </Route>
+
           </Switch>
           <Footer></Footer>
         </Router>

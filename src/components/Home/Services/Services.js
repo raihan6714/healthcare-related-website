@@ -12,6 +12,7 @@ const Services = () => {
                 setServices(data);
             });
     }, []);
+    const newServices = services.slice(0, 6);
     return (
         <>
 
@@ -23,7 +24,7 @@ const Services = () => {
                 <div className="row row-cols-1 row-cols-md-3 g-4 mx-2">
                     {/* render service from server side */}
                     {
-                        services.map(service => <ServiceCart
+                        newServices.map(service => <ServiceCart
                             key={service.key}
                             service={service}
                         ></ServiceCart>)

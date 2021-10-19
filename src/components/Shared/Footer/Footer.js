@@ -4,40 +4,38 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div className="mx-4">
-            <footer className="pt-5">
+            <footer className="pt-5 bg-gray">
                 <div className="row">
                     <div className="col-2">
-                        <h5>Section</h5>
+                        <h5>About Us</h5>
                         <ul className="nav flex-column">
                             <li className="nav-item mb-2">
-                                <Link to="/" className="nav-link p-0 text-muted">Home</Link>
+                                <Link to="/home" className="nav-link p-0 text-muted">Home</Link>
                             </li>
-                            <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-muted">Features</Link></li>
-                            <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-muted">Pricing</Link></li>
-                            <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-muted">FAQs</Link></li>
-                            <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-muted">About</Link></li>
+                            <li className="nav-item mb-2">
+                                <Link to="/" className="nav-link p-0 text-muted">Features</Link>
+                            </li>
+                            <li className="nav-item mb-2">
+                                <Link to="/" className="nav-link p-0 text-muted">Pricing</Link>
+                            </li>
                         </ul>
                     </div>
 
                     <div className="col-2">
-                        <h5>Section</h5>
+                        <h5>Contacts Us</h5>
                         <ul className="nav flex-column">
-                            <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-muted">Home</Link></li>
-                            <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-muted">Features</Link></li>
                             <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-muted">Pricing</Link></li>
                             <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-muted">FAQs</Link></li>
-                            <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-muted">About</Link></li>
+                            <li className="nav-item mb-2"><Link to="/contacts" className="nav-link p-0 text-muted">Contacts</Link></li>
                         </ul>
                     </div>
 
                     <div className="col-2">
-                        <h5>Section</h5>
+                        <h5>Our Service</h5>
                         <ul className="nav flex-column">
-                            <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-muted">Home</Link></li>
-                            <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-muted">Features</Link></li>
-                            <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-muted">Pricing</Link></li>
-                            <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-muted">FAQs</Link></li>
-                            <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-muted">About</Link></li>
+                            <li className="nav-item mb-2"><Link to="/services" className="nav-link p-0 text-muted">Services</Link></li>
+                            <li className="nav-item mb-2"><Link to="/books" className="nav-link p-0 text-muted">Books</Link></li>
+                            <li className="nav-item mb-2"><Link to="/about" className="nav-link p-0 text-muted">About</Link></li>
                         </ul>
                     </div>
 

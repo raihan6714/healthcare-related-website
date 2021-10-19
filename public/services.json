@@ -40,5 +40,26 @@
         "desc": "Attending social activities, connecting with local resources and trying new things",
         "img": "https://livewp.site/html/optima/img/about_us/owl/owl_img_07.jpg",
         "price": "700"
+    },
+    {
+        "key": "service-07",
+        "name": "HEART STRESS THERAPY",
+        "desc": "Attending social activities, connecting with local resources and trying new things",
+        "img": "https://livewp.site/html/optima/img/about_us/owl/owl_img_03.jpg",
+        "price": "700"
+    },
+    {
+        "key": "service-08",
+        "name": "MNTAL STRESS THERAPY",
+        "desc": "Attending social activities, connecting with local resources and trying new things",
+        "img": "https://livewp.site/html/optima/img/about_us/owl/owl_img_02.jpg",
+        "price": "700"
+    },
+    {
+        "key": "service-09",
+        "name": "STRESS THERAPY",
+        "desc": "Attending social activities, connecting with local resources and trying new things",
+        "img": "https://livewp.site/html/optima/img/about_us/owl/owl_img_01.jpg",
+        "price": "700"
     }
 ]
