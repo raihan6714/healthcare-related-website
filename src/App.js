@@ -18,6 +18,7 @@ import AuthProvider from './Context/AuthProvider';
 import AllServices from './components/AllServices/AllServices';
 import Shop from './components/Shop/Shop';
 import Contacts from './components/Contacts/Contacts';
+import Books from './components/Books/Books';
 function App() {
   return (
     <>
@@ -53,6 +54,9 @@ function App() {
             {/* services & our books private route */}
             <PrivateRoute path="/serviceDetails/:id">
               <ServiceDetalis></ServiceDetalis>
+            </PrivateRoute>
+            <PrivateRoute path="/booksdetails/:id">
+              <Books></Books>
             </PrivateRoute>
             {/* shop  */}
             <PrivateRoute path="/books">

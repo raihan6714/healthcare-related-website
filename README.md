@@ -14,6 +14,5 @@ https://optima-mental-hospital.web.app/
 * Here is some propessonal Spesialists for treatment.
 * Optima has shown what services it provides.
 * Useing Firebase for Sign in and Sign up(email & password and sign in with Google).
-* day by day 
-* Something new will be added gradually
+* Something new will be added gradually day by day
 * Animation has been used on the Not-Found page.

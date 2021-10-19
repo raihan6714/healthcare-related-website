@@ -13,7 +13,7 @@ const Products = (props) => {
                         <p className="card-text">{desc.slice(0, 100)}</p>
                         <div className="d-flex justify-content-between">
                             <p className="card-text fs-4">Price:${price}</p>
-                            <Link to={`/serviceDetails/${key}`}>
+                            <Link to={`/booksdetails/${key}`}>
                                 <button type="button" className="btn btn-primary">Buy Now</button>
                             </Link>
 

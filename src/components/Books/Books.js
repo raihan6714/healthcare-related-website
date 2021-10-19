@@ -1,20 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 
-const ServiceDetalis = () => {
+const Books = () => {
     const { id } = useParams();
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('/services.json')
+        fetch('/shop.json')
             .then(res => res.json())
             .then(data => setData(data));
     }, []);
 
     const selectItem = data.filter(dt => dt.key === id);
-
     return (
-
         <>
             <div className="container py-4">
                 <div className="row">
@@ -25,14 +23,13 @@ const ServiceDetalis = () => {
                         <div className="card-body">
                             <h2 className="">THERAPIES NAME : <span className="text-primary mb-4">{selectItem[0]?.name}</span></h2>
                             <h6 className="mb-4">{selectItem[0]?.desc}</h6>
-                            <h3><b>FEES :</b> <span className="text-primary">${selectItem[0]?.price}</span></h3>
+                            <h3><b>PRICE :</b> <span className="text-primary">${selectItem[0]?.price}</span></h3>
                         </div>
                     </div>
                 </div>
             </div>
-
         </>
     );
 };
 
-export default ServiceDetalis;
+export default Books;
