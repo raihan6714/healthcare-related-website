@@ -1,9 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../../hook/useAuth';
 import './Login.css';
 const Login = () => {
     const { SignInWithGoogle, handleLogin, handleEmailChange, handlePasswordChange } = useAuth();
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.form || '/books';
+    const redirect_urii = location.state?.form || '/services';
+    const handleGoogleSignIn = () => {
+        SignInWithGoogle()
+            .then(result => {
+                history.push(redirect_uri);
+                history.push(redirect_urii);
+            })
+
+    }
     return (
         <>
             <form onSubmit={handleLogin}>
@@ -23,7 +35,7 @@ const Login = () => {
                             <div className="d-flex justify-content-between">
                                 <button type="submit" className="btn btn-primary"><i className="fas fa-sign-in-alt"></i> Login</button>
 
-                                <button type="button" className="btn btn-success" onClick={SignInWithGoogle}><i className="fab fa-google"></i> Google Sign In</button>
+                                <button type="button" className="btn btn-success" onClick={handleGoogleSignIn}><i className="fab fa-google"></i> Google Sign In</button>
 
                                 <button type="button" className="btn btn-info"><i className="fab fa-github"></i> Github Sign In</button>
                             </div>
