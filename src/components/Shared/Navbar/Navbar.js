@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useFirebase from '../../../hook/useFirebase';
 
 const Navbar = () => {
+    const { user, logOut } = useFirebase();
     return (
-        <>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="mx-4">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">
                         <img src="https://livewp.site/html/optima/img/logo.png" alt="" width="200" height="50" className="d-inline-block align-text-top" />
@@ -30,13 +32,26 @@ const Navbar = () => {
                                 <Link className="nav-link" to="/shop">Shop</Link>
                             </li>
                         </ul>
+                        {
+                            user.email ? <h4 className="nav-link text-success mt-2"> <b className="text-primary">User Name:</b> {user.displayName}</h4> : <p></p>
+                        }
                         <div className="navbar-text">
-                            <button type="button" class="btn btn-outline-primary">Login</button>
+                            {
+                                user.email ?
+                                    <Link to="/login">
+                                        <button type="button" className="btn btn-outline-primary" onClick={logOut}>Logout</button>
+                                    </Link>
+                                    :
+                                    <Link to="/login">
+                                        <button type="button" className="btn btn-outline-primary">Login</button>
+                                    </Link>
+                            }
+
                         </div>
                     </div>
                 </div>
             </nav>
-        </>
+        </div>
     );
 };
 

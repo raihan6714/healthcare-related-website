@@ -1,0 +1,37 @@
+.subtitle-01 {
+    font-size: 24px;
+    line-height: 16px;
+    color: #5c656d;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 19px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.title-02 span {
+    font-weight: 700;
+}
+.counselling-text-01 {
+    margin-bottom: 42px;
+}
+.counselling-text-01 p {
+    font-size: 18px;
+    line-height: 30px;
+}
+.counselling-btn {
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #4eaac8;
+    padding: 21px 52px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 700;
+}
+.counselling-img-01 {
+    padding-top: 40px;
+}

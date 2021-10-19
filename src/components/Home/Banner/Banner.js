@@ -7,11 +7,11 @@ const Banner = () => {
             <div className="mx-4">
                 <div className="row">
                     <div className="col-sm-6 col-md-4 banners-promo-01">
-                        <h3 class="banners-promo-01__title">For Adults</h3>
-                        <div class="banners-promo-01__text">
+                        <h3 className="banners-promo-01__title">For Adults</h3>
+                        <div className="banners-promo-01__text">
                             <p>You can call our highly experienced clinical team if your child, teenager or family is going through difficulties.</p>
                         </div>
-                        <ul class="banners-promo-01__list">
+                        <ul className="banners-promo-01__list">
                             <li>Anxiety</li>
                             <li>Depression</li>
                             <li>Bipolar Disorder</li>
@@ -20,11 +20,11 @@ const Banner = () => {
                         </ul>
                     </div>
                     <div className="col-sm-6 col-md-4 banners-promo-02">
-                        <h3 class="banners-promo-02__title">For Children</h3>
-                        <div class="banners-promo-02__text">
+                        <h3 className="banners-promo-02__title">For Children</h3>
+                        <div className="banners-promo-02__text">
                             <p>You can call our highly experienced clinical team if your child, teenager or family is going through difficulties.</p>
                         </div>
-                        <ul class="banners-promo-02__list">
+                        <ul className="banners-promo-02__list">
                             <li>ADHD</li>
                             <li>Aspergers and Autism</li>
                             <li>Depression</li>
@@ -33,11 +33,11 @@ const Banner = () => {
                         </ul>
                     </div>
                     <div className="col-sm-6 col-md-4 banners-promo-01">
-                        <h3 class="banners-promo-01__title">For Business</h3>
-                        <div class="banners-promo-01__text">
+                        <h3 className="banners-promo-01__title">For Business</h3>
+                        <div className="banners-promo-01__text">
                             <p>You can call our highly experienced clinical team if your child, teenager or family is going through difficulties.</p>
                         </div>
-                        <ul class="banners-promo-01__list">
+                        <ul className="banners-promo-01__list">
                             <li>Medico Legal Reports</li>
                             <li>Occupational Health</li>
                             <li>Locums and Staffing</li>
