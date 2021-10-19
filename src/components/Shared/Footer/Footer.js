@@ -13,10 +13,10 @@ const Footer = () => {
                                 <Link to="/home" className="nav-link p-0 text-muted">Home</Link>
                             </li>
                             <li className="nav-item mb-2">
-                                <Link to="/" className="nav-link p-0 text-muted">Features</Link>
+                                <Link to="/features" className="nav-link p-0 text-muted">Features</Link>
                             </li>
                             <li className="nav-item mb-2">
-                                <Link to="/" className="nav-link p-0 text-muted">Pricing</Link>
+                                <Link to="/pricing" className="nav-link p-0 text-muted">Pricing</Link>
                             </li>
                         </ul>
                     </div>
@@ -24,8 +24,8 @@ const Footer = () => {
                     <div className="col-2">
                         <h5>Contacts Us</h5>
                         <ul className="nav flex-column">
-                            <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-muted">Pricing</Link></li>
-                            <li className="nav-item mb-2"><Link to="/" className="nav-link p-0 text-muted">FAQs</Link></li>
+                            <li className="nav-item mb-2"><Link to="/pricing" className="nav-link p-0 text-muted">Pricing</Link></li>
+                            <li className="nav-item mb-2"><Link to="/faq" className="nav-link p-0 text-muted">FAQs</Link></li>
                             <li className="nav-item mb-2"><Link to="/contacts" className="nav-link p-0 text-muted">Contacts</Link></li>
                         </ul>
                     </div>
