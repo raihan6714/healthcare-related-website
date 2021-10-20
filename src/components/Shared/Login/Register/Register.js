@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../../../hook/useAuth';
 
 const Register = () => {
-    const { SignInWithGoogle, handleRegstation, handleEmailChange, handlePasswordChange } = useAuth();
+    const { SignInWithGoogle, handleRegstation, handleEmailChange, handlePasswordChange, error } = useAuth();
     return (
         <>
             <form onSubmit={handleRegstation}>
@@ -22,7 +22,7 @@ const Register = () => {
 
                             <label htmlFor="psw"><b>Password</b></label>
                             <input onBlur={handlePasswordChange} type="password" placeholder="Enter Password" name="psw" required />
-
+                            <div className="row mb-3 text-danger">{error}</div>
                             <div className="d-flex justify-content-between">
                                 <button type="submit" className="btn btn-primary"><i className="fas fa-registered"></i>  Sign Up</button>
                                 <button onClick={SignInWithGoogle} type="button" className="btn btn-success">

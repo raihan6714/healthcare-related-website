@@ -58,12 +58,27 @@ const Footer = () => {
                         <li className="ms-3">
                             <Link className="link-dark" to="/">
                                 <i className="fab fa-twitter-square"></i>
+                            </Link>
+                        </li>
+                        <li className="ms-3">
+                            <Link className="link-dark" to="/">
+                                <i className="fab fa-facebook-square"></i>
+                            </Link>
+                        </li>
+                        <li className="ms-3">
+                            <Link className="link-dark" to="/">
+                                <i className="fab fa-linkedin"></i>
+                            </Link>
+                        </li>
+                        <li className="ms-3">
+                            <Link className="link-dark" to="/">
+                                <i className="fab fa-instagram-square"></i>
                             </Link></li>
-                        <li className="ms-3"><Link className="link-dark" to="/">
-                            <i className="fab fa-facebook-square"></i></Link></li>
-                        <li className="ms-3"><Link className="link-dark" to="/"><i className="fab fa-linkedin"></i></Link></li>
-                        <li className="ms-3"><Link className="link-dark" to="/"><i className="fab fa-instagram-square"></i></Link></li>
-                        <li className="ms-3"><Link className="link-dark" to="/"><i className="fab fa-google-plus-square"></i></Link></li>
+                        <li className="ms-3">
+                            <Link className="link-dark" to="/">
+                                <i className="fab fa-google-plus-square"></i>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </footer>

@@ -36,7 +36,7 @@ const Navbar = () => {
                         </ul>
                         {
                             user.email ? <div className="chip me-2">
-                                <img src={photoURL} alt="user" />
+                                <img src={photoURL} alt="User" />
                                 {displayName}
                             </div>
                                 : <div></div>
