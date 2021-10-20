@@ -19,19 +19,19 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarText">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
+                                <Link className="nav-link active links" aria-current="page" to="/home">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/about">About</Link>
+                                <Link className="nav-link links" to="/about">About</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/contacts">Contacts</Link>
+                                <Link className="nav-link links" to="/contacts">Contacts</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/services">Services</Link>
+                                <Link className="nav-link links" to="/services">Services</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/books">Our Books</Link>
+                                <Link className="nav-link links" to="/books">Our Books</Link>
                             </li>
                         </ul>
                         {

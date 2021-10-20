@@ -15,3 +15,8 @@
     width: 50px;
     border-radius: 50%;
   }
+
+  .links:hover{
+    background-color: coral;
+    border-radius: 5px;
+  }

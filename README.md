@@ -13,6 +13,7 @@ https://optima-mental-hospital.web.app/
 * Books ,Services & Services details Users will be able to login to the page.If you are not logged in, you will be taken to the login page to login
 * Here is some propessonal Spesialists for treatment.
 * Optima has shown what services it provides.
-* Useing Firebase for Sign in and Sign up(email & password and sign in with Google).
+* Useing Firebase for Sign in and Sign up(email & password and sign in with Google) and if you register same email they give you error message.
 * Something new will be added gradually day by day
 * Animation has been used on the Not-Found page.
+* hover uses card ,icon and navbar.
