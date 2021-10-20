@@ -18,7 +18,7 @@ const ServiceDetalis = () => {
         <>
             <div className="container py-4">
                 <div className="row">
-                    <div className="col-md-5">
+                    <div className="col-md-5 card">
                         <img src={selectItem[0]?.img} className="img-fluid rounded-start" alt="..." />
                     </div>
                     <div className="col-md-7">

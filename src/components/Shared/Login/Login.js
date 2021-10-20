@@ -21,12 +21,12 @@ const Login = () => {
             <form onSubmit={handleLogin}>
                 <div className="container mx-auto">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-sm-12 col-md-6">
                             <div className="">
                                 <img src="https://i.ibb.co/8zrDtYr/secure-login-concept-illustration-114360-4685-1.jpg" alt="Avatar" className="img-fluid" />
                             </div>
                         </div>
-                        <div className="col-md-6 mt-5">
+                        <div className="col-sm-12 col-md-6 mt-5">
                             <h2 className="text-center"><i className="fas fa-sign-in-alt"></i> Login Please</h2>
                             <label htmlFor="uname"><b>Email</b></label>
                             <input onBlur={handleEmailChange} type="email" placeholder="Enter email" name="email" required />

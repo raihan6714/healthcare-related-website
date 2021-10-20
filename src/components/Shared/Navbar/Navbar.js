@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hook/useAuth';
+import './Navbar.css';
 
 const Navbar = () => {
     const { user, logOut } = useAuth();
+    const { displayName, photoURL } = user;
     return (
         <div className="mx-4">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -33,7 +35,11 @@ const Navbar = () => {
                             </li>
                         </ul>
                         {
-                            user.email ? <h4 className="nav-link text-success mt-2"> <b className="text-primary">User Name:</b> {user.displayName}</h4> : <p></p>
+                            user.email ? <div className="chip me-2">
+                                <img src={photoURL} alt="user" />
+                                {displayName}
+                            </div>
+                                : <div></div>
                         }
                         <div className="navbar-text">
                             {

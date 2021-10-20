@@ -1,39 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './NotFound.css';
 const NotFound = () => {
     return (
-        <div className="container">
-            <div className="outer-track">
-                <div className="inner-track">
-                    <div className="tractor-container">
-                        <div className="tractor">
-                            <div className="body">
-                                <div className="light"></div>
-                                <div className="grill"></div>
-                                <div className="exhaust"></div>
-                                <div className="steering"></div>
-                                <div className="seat"></div>
-                                <div className="wheel-front"></div>
-                                <div className="fender"></div>
-                                <div className="wheel-back"></div>
-                                <div className="hitch"></div>
-                            </div>
+        <div className="container mb-3">
+            <div className="row">
+                <div className="col-sm-12 col-md-12">
+                    <div className="col-sm-10 col-sm-offset-1  text-center">
+                        <div className="four_zero_four_bg">
+                            <h1 className="text-center ">404</h1>
                         </div>
-                    </div>
-                    <div className="rope"></div>
-                    <div className="tractor-container">
-                        <div className="tractor">
-                            <div className="body">
-                                <div className="light"></div>
-                                <div className="grill"></div>
-                                <div className="exhaust"></div>
-                                <div className="steering"></div>
-                                <div className="seat"></div>
-                                <div className="wheel-front"></div>
-                                <div className="fender"></div>
-                                <div className="wheel-back"></div>
-                                <div className="hitch"></div>
-                            </div>
+                        <div className="">
+                            <h3 className="h2">
+                                Look like you're lost
+                            </h3>
+                            <p>the page you are looking for not avaible!</p>
+                            <button className="button">
+                                <Link href="" className="">Home</Link>
+                            </button>
                         </div>
                     </div>
                 </div>

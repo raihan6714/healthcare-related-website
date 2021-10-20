@@ -14,7 +14,7 @@ const OnlineService = () => {
                         <div className="counselling-text-01">
                             <p>Our clinic largest private mental health partnership, with a carefully selected nationwide team of Psychiatrists, Psychologists and Psychotherapists. We only work with highly experienced and capable partners who share our values.</p>
                         </div>
-                        <Link className="counselling-btn" to="/">Get now</Link>
+                        <button className="button"><Link className="" to="/about">Get now</Link></button>
                     </div>
                     <div className="col-md-6 col-lg-6">
                         <div className="">

@@ -12,21 +12,21 @@ const Banner = () => {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active" data-bs-interval="10000">
-                        <img src="https://livewp.site/html/optima/img/home_page/img_box_04.jpg" alt="..." />
+                        <img src="https://livewp.site/html/optima/img/home_page/img_box_04.jpg" alt="..." className="img-fluid" />
                         <div className="carousel-caption d-none d-md-block">
                             <h2 className="text-white">A Strong Image of
                                 Yourself is Our Success</h2>
                         </div>
                     </div>
                     <div className="carousel-item" data-bs-interval="2000">
-                        <img src="https://www.carrgomm.org/handlers/getimage.ashx?idmf=de53a9c0-1f7f-4ad3-a945-30079e019d8f&w=1600&h=700&f=1" alt="..." />
+                        <img src="https://www.carrgomm.org/handlers/getimage.ashx?idmf=de53a9c0-1f7f-4ad3-a945-30079e019d8f&w=1600&h=700&f=1" alt="..." className="img-fluid" />
                         <div className="carousel-caption d-none d-md-block">
                             <h2 className="text-dark">A Strong Image of
                                 Yourself is Our Success</h2>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src="https://www.carrgomm.org/handlers/getimage.ashx?idmf=73271714-730e-40b0-a789-54e9de35326c&w=1600&h=700&f=1" alt="..." />
+                        <img src="https://www.carrgomm.org/handlers/getimage.ashx?idmf=73271714-730e-40b0-a789-54e9de35326c&w=1600&h=700&f=1" alt="..." className="img-fluid" />
                         <div className="carousel-caption d-none d-md-block">
                             <h2 className="text-white">WE ARE PRIVATE PSYCHIATRY & THERAPY CLINIC</h2>
                         </div>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div className="mx-4">
-            <footer className="pt-5 bg-gray">
+            <footer className="container pt-5 bg-gray">
                 <div className="row">
                     <div className="col-2">
                         <h5>About Us</h5>
@@ -31,7 +31,7 @@ const Footer = () => {
                     </div>
 
                     <div className="col-2">
-                        <h5>Our Service</h5>
+                        <h5>Service</h5>
                         <ul className="nav flex-column">
                             <li className="nav-item mb-2"><Link to="/services" className="nav-link p-0 text-muted">Services</Link></li>
                             <li className="nav-item mb-2"><Link to="/books" className="nav-link p-0 text-muted">Books</Link></li>
@@ -39,11 +39,11 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className="col-4 offset-1">
+                    <div className="col-5">
                         <form>
                             <h5>Subscribe to our newsletter</h5>
                             <p>Monthly digest of whats new and exciting from us.</p>
-                            <div className="d-flex w-100 gap-2">
+                            <div className="d-flex w-90 gap-2">
                                 <label htmlFor="newsletter1" className="visually-hidden">Email address</label>
                                 <input id="newsletter1" type="text1" className="form-control" placeholder="Email address" />
                                 <button className="btn btn-primary" type="button">Subscribe</button>
